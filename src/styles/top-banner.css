@@ -1,0 +1,31 @@
+.top-banner {
+  @apply relative flex justify-between items-center w-full px-8 py-2 bg-black text-white max-md:px-5 max-md:max-w-full;
+}
+
+.top-banner__text-signup {
+  @apply flex flex-1 gap-1 justify-center items-center min-w-[240px] md:justify-center max-md:flex-col max-md:items-start max-md:text-left max-md:pl-0 max-md:justify-start;
+}
+
+.top-banner__highlight {
+  @apply font-semibold;
+}
+
+.top-banner__signup {
+  @apply flex items-center gap-1;
+}
+
+.top-banner__link {
+  @apply underline;
+}
+
+.top-banner__icon {
+  @apply object-contain w-3.5 aspect-square;
+}
+
+.top-banner__currency {
+  @apply absolute flex items-center gap-3 top-2/4 right-[30px] transform -translate-y-2/4;
+}
+
+.top-banner__flag {
+  @apply object-contain w-[21px] aspect-[1.4];
+}

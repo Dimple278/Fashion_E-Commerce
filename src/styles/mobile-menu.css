@@ -1,0 +1,15 @@
+.mobile-menu {
+  @apply absolute top-full left-0 w-full bg-white border-t border-solid border-zinc-300 md:hidden z-20 shadow-lg transition-transform duration-300;
+}
+
+.mobile-menu__list {
+  @apply flex flex-col items-center space-y-4 py-4;
+}
+
+.mobile-menu__item {
+  @apply text-lg;
+}
+
+.mobile-menu__link {
+  @apply cursor-pointer text-lg hover:text-neutral-800 transition-colors duration-200;
+}

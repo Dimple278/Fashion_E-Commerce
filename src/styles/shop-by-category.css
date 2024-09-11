@@ -1,0 +1,35 @@
+.shop-by-category {
+  @apply flex flex-col items-center px-11 py-24 text-center text-neutral-800 max-md:px-5;
+}
+
+.shop-by-category__heading {
+  @apply text-2xl leading-none max-md:max-w-full;
+}
+
+.shop-by-category__grid {
+  @apply flex flex-wrap gap-8 mt-10;
+}
+
+.shop-by-category__hover-overlay {
+  @apply absolute inset-0 bg-gray-800 opacity-0 group-hover:opacity-50 transition-opacity;
+}
+
+.shop-by-category__hover-text {
+  @apply absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity;
+}
+
+.category-item__image {
+  @apply object-contain aspect-[0.81] w-[213px];
+}
+
+.category-item__label {
+  @apply mt-3 underline;
+}
+
+.category-card {
+  @apply flex flex-col flex-1 shrink justify-center items-center basis-0 min-h-[534px] min-w-[240px] max-md:max-w-full bg-cover bg-center;
+}
+
+.category-card__title {
+  @apply text-4xl tracking-wide text-white max-md:max-w-full;
+}

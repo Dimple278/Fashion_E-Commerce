@@ -1,0 +1,21 @@
+@layer components {
+  .button-style {
+    @apply text-gray-500 hover:text-gray-700 transition-colors;
+  }
+
+  .cart-summary-modal {
+    @apply fixed inset-y-0 right-0 w-full sm:w-[400px] md:w-[500px] bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out overflow-hidden flex flex-col;
+  }
+
+  .cart-item-container {
+    @apply flex justify-between items-center space-x-4 border-b pb-4;
+  }
+
+  .quantity-button {
+    @apply px-2 py-1 text-gray-500 hover:text-gray-700 transition-colors;
+  }
+
+  .image-container {
+    @apply w-24 h-32 flex-shrink-0 overflow-hidden rounded-md border border-gray-200;
+  }
+}

@@ -1,0 +1,7 @@
+.btn-base {
+  @apply gap-2.5 self-center py-3 mt-8 w-60 max-w-full text-sm tracking-widest leading-tight z-10;
+}
+
+.btn-primary {
+  @apply bg-white text-neutral-800;
+}

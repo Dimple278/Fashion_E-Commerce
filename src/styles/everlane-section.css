@@ -1,0 +1,35 @@
+.everlane-section {
+  @apply flex flex-col pt-24 pb-20 mx-auto px-4;
+}
+
+.section-header {
+  @apply flex flex-col w-full text-center text-black mb-8;
+}
+
+.section-header h2 {
+  @apply text-2xl leading-none;
+}
+
+.section-header p {
+  @apply mt-3 text-base tracking-wider;
+}
+
+.scroll-container {
+  @apply flex gap-4 overflow-x-auto scrollbar-hide;
+}
+
+.product-card-container {
+  @apply flex-none w-[calc(100%/1.5)] md:w-[calc(100%/2.5)] lg:w-[calc(100%/4.5)];
+}
+
+.scroll-arrow {
+  @apply absolute z-10 flex justify-center items-center w-10 h-10 bg-white rounded-full -translate-y-1/2 top-1/2 shadow-md;
+}
+
+.left-arrow {
+  @apply left-0;
+}
+
+.right-arrow {
+  @apply right-0;
+}
