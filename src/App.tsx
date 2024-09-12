@@ -7,6 +7,7 @@ import Listings from "./pages/Listings";
 import { useGetProductsQuery } from "./store/slices/apiSlice";
 import ProductDetail from "./pages/ProductDetails";
 import StoreLocator from "./pages/Stores";
+import Blog from "./pages/Blog";
 
 const App: React.FC = () => {
   const {
@@ -111,6 +112,7 @@ const App: React.FC = () => {
         <Route path="/products/:id" element={<ProductDetail />} />
         <Route path="/about" element={<About />} />
         <Route path="/stores" element={<StoreLocator />} />
+        <Route path="/blog" element={<Blog />} />
       </Route>
     </Routes>
   );
