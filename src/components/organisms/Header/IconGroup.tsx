@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useSelector } from "react-redux";
 import IconButton from "./IconButton";
 import { RootState } from "../../../store/store";
@@ -7,10 +7,6 @@ import CartSummary from "../CartSummary/CartSummary";
 interface IconData {
   src: string;
   alt: string;
-}
-
-interface IconGroupProps {
-  onSearchClick: () => void; // Add the prop for handling search click
 }
 
 const iconData: IconData[] = [
@@ -28,7 +24,7 @@ const iconData: IconData[] = [
   },
 ];
 
-const IconGroup: React.FC<IconGroupProps> = ({ onSearchClick }) => {
+const IconGroup = () => {
   const totalQuantity = useSelector(
     (state: RootState) => state.cart.totalQuantity
   );
@@ -52,9 +48,7 @@ const IconGroup: React.FC<IconGroupProps> = ({ onSearchClick }) => {
                 )}
               </button>
             ) : icon.alt === "Search" ? (
-              <button onClick={onSearchClick}>
-                <IconButton src={icon.src} alt={icon.alt} />
-              </button>
+              <IconButton src={icon.src} alt={icon.alt} />
             ) : (
               <IconButton src={icon.src} alt={icon.alt} />
             )}

@@ -1,34 +1,7 @@
 import React from "react";
 import CategoryCard from "./CategoryCard";
 
-interface Category {
-  imageSrc: string;
-  title: string;
-  buttonText: string;
-}
-
-const categories: Category[] = [
-  {
-    imageSrc: "/category1.png",
-    title: "New Arrivals",
-    buttonText: "SHOP THE LATEST",
-  },
-  {
-    imageSrc: "/category2.png",
-    title: "Best-Sellers",
-    buttonText: "SHOP YOUR FAVORITES",
-  },
-  {
-    imageSrc: "/category1.png",
-    title: "New Arrivals",
-    buttonText: "SHOP THE LATEST",
-  },
-  {
-    imageSrc: "/category3.png",
-    title: "The Holiday Outfit",
-    buttonText: "SHOP OCCASION",
-  },
-];
+import { categories } from "../../../constants/categories";
 
 const CategoryGrid: React.FC = () => {
   return (

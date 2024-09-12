@@ -2,17 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ExploreCard from "./ExploreCard";
 
-interface ExploreItem {
-  imageSrc: string;
-  title: string;
-  link: string;
-}
-
-const exploreItems: ExploreItem[] = [
-  { imageSrc: "/explore1.png", title: "Our Story", link: "/about" },
-  { imageSrc: "/explore2.png", title: "Our Stores", link: "/stores" },
-  { imageSrc: "/explore3.png", title: "Careers", link: "/about" },
-];
+import { exploreItems } from "../../../../constants/About/exploreItems";
 
 const ExploreSection: React.FC = () => {
   return (

@@ -1,16 +1,17 @@
 import React from "react";
 import HeroSection from "../components/organisms/AboutSection/HeroSection/HeroSection";
-import EverlaneDescription from "../components/organisms/AboutSection/Description/EverlanceDescription";
 import EthicalApproach from "../components/organisms/AboutSection/EthicalApproach/EthicalApproach";
 import Image from "../components/atoms/Image";
 import QualitySection from "../components/organisms/AboutSection/QualitySection/QualitySection";
 import ExploreSection from "../components/organisms/AboutSection/ExploreSection/ExploreSection";
+import AboutDescription from "../components/atoms/AboutDescription";
+import { descriptionText } from "../constants/About/Description";
 
 const About: React.FC = () => {
   return (
     <>
       <HeroSection backgroundImageSrc="/aboutHero.png" />
-      <EverlaneDescription />
+      <AboutDescription text={descriptionText} />
       <EthicalApproach
         title="Our Factories"
         subtitle="Our Ethical Approach"

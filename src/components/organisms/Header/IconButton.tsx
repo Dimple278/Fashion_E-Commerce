@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "../../atoms/Image";
 
 interface IconButtonProps {
   src: string;
@@ -12,7 +13,7 @@ const IconButton: React.FC<IconButtonProps> = ({ src, alt }) => {
       className="flex gap-2.5 justify-center items-center self-stretch p-3 my-auto w-10"
       aria-label={alt}
     >
-      <img
+      <Image
         loading="lazy"
         src={src}
         alt={alt}

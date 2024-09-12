@@ -4,17 +4,11 @@ import Image from "../../atoms/Image";
 import IconGroup from "./IconGroup";
 import HamburgerIcon from "../../molecules/HamburgerIcon";
 import MobileMenu from "../../molecules/MobileMenu";
+import { navItems } from "../../../constants/navItems";
 
 const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-
-  const navItems = [
-    { name: "Women", path: "/products/category/women's clothing" },
-    { name: "Men", path: "/products/category/men's clothing" },
-    { name: "About", path: "/about" },
-    { name: "Everworld Stories", path: "/" },
-  ];
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);

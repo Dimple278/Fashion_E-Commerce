@@ -1,18 +1,7 @@
 import React from "react";
+import { subNavItems } from "../../../constants/navItems";
 
 const SubNavigation: React.FC = () => {
-  const subNavItems = [
-    "Holiday Gifting",
-    "New Arrivals",
-    "Best-Sellers",
-    "Clothing",
-    "Tops & Sweaters",
-    "Pants & Jeans",
-    "Outerwear",
-    "Shoes & Bags",
-    "Sale",
-  ];
-
   return (
     <nav className="flex flex-wrap justify-center items-center w-full text-center max-md:max-w-full">
       {subNavItems.map((item, index) => (

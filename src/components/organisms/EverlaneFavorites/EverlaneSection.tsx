@@ -1,63 +1,7 @@
 import ProductCard from "./ProductCard";
 import React, { useState, useRef, useEffect, useCallback } from "react";
+import { products } from "../../../constants/products";
 
-interface Product {
-  imageSrc: string;
-  title: string;
-  price: string;
-  color: string;
-}
-
-const products: Product[] = [
-  {
-    imageSrc: "/favorite1.png",
-    title: "The Waffle Long-Sleeve Crew",
-    price: "$60",
-    color: "Bone",
-  },
-  {
-    imageSrc: "/favorite2.png",
-    title: "The Bomber Jacket | Uniform",
-    price: "$148",
-    color: "Toasted Coconut",
-  },
-  {
-    imageSrc: "/favorite3.png",
-    title: "The Slim 4-Way Stretch Organic Jean | Uniform",
-    price: "$98",
-    color: "Dark Indigo",
-  },
-  {
-    imageSrc: "/favorite2.png",
-    title: "The Bomber Jacket | Uniform",
-    price: "$148",
-    color: "Toasted Coconut",
-  },
-  {
-    imageSrc: "/favorite3.png",
-    title: "The Slim 4-Way Stretch Organic Jean | Uniform",
-    price: "$98",
-    color: "Dark Indigo",
-  },
-  {
-    imageSrc: "/favorite1.png",
-    title: "The Waffle Long-Sleeve Crew",
-    price: "$60",
-    color: "Bone",
-  },
-  {
-    imageSrc: "/favorite1.png",
-    title: "The Waffle Long-Sleeve Crew",
-    price: "$60",
-    color: "Bone",
-  },
-  {
-    imageSrc: "/favorite1.png",
-    title: "The Waffle Long-Sleeve Crew",
-    price: "$60",
-    color: "Bone",
-  },
-];
 const EverlaneSection: React.FC = () => {
   const [showLeftArrow, setShowLeftArrow] = useState(false);
   const [showRightArrow, setShowRightArrow] = useState(true);

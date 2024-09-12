@@ -1,13 +1,7 @@
 import React from "react";
+import { IProductCardProps } from "../../../interfaces/IProductCardProps";
 
-interface ProductCardProps {
-  imageSrc: string;
-  title: string;
-  price: string;
-  color: string;
-}
-
-const ProductCard: React.FC<ProductCardProps> = ({
+const ProductCard: React.FC<IProductCardProps> = ({
   imageSrc,
   title,
   price,

@@ -1,15 +1,7 @@
 import Image from "../../atoms/Image";
+import { IImageGalleryProps } from "../../../interfaces/ImageProps";
 
-interface ImageProps {
-  src: string;
-  alt: string;
-}
-
-interface ImageGalleryProps {
-  images: ImageProps[];
-}
-
-const ImageGallery: React.FC<ImageGalleryProps> = ({ images }) => {
+const ImageGallery: React.FC<IImageGalleryProps> = ({ images }) => {
   return (
     <>
       {images.map((image, index) => (
