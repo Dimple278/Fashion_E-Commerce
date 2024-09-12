@@ -7,7 +7,7 @@ interface ExploreCardProps {
 
 const ExploreCard: React.FC<ExploreCardProps> = ({ imageSrc, title }) => {
   return (
-    <article className="flex flex-col flex-1 shrink basis-0 min-w-[240px] items-center">
+    <article className="flex flex-col flex-1 shrink basis-0 min-w-[20px] items-center">
       <img
         loading="lazy"
         src={imageSrc}

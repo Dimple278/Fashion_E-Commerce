@@ -6,6 +6,7 @@ import Layout from "./components/Layout";
 import Listings from "./pages/Listings";
 import { useGetProductsQuery } from "./store/slices/apiSlice";
 import ProductDetail from "./pages/ProductDetails";
+import StoreLocator from "./pages/Stores";
 
 const App: React.FC = () => {
   const {
@@ -77,7 +78,7 @@ const App: React.FC = () => {
             />
           }
         />
-        {/* Add the missing Jewelry route */}
+
         <Route
           path="/products/category/jewelery"
           element={
@@ -91,7 +92,7 @@ const App: React.FC = () => {
             />
           }
         />
-        {/* Add the missing Electronics route */}
+
         <Route
           path="/products/category/electronics"
           element={
@@ -109,6 +110,7 @@ const App: React.FC = () => {
         />
         <Route path="/products/:id" element={<ProductDetail />} />
         <Route path="/about" element={<About />} />
+        <Route path="/stores" element={<StoreLocator />} />
       </Route>
     </Routes>
   );
