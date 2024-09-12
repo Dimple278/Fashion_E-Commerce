@@ -41,7 +41,6 @@ const Navigation: React.FC = () => {
       );
     }
 
-    // Special case for home page
     if (path === "/" && currentPath === "/") {
       return true;
     }
