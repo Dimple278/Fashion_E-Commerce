@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# E-commerce App
+## Overview
+This project is an eCommerce application where users can browse and add products to their cart. The app is fully responsive and uses Redux for state management. The data for the products is fetched from the FakeStore API, and the cart state is persisted using redux-persist.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+* Product Listing: Users can view a list of products fetched from FakeStore API.
+* Product Details: Each product has a detailed view with additional information.
+* Add to Cart: Users can add items to their cart and update item quantities.
+* Cart Summary: Users can view a summary of the items in their cart, with the ability to remove or adjust quantities.
+* State Management: The app uses Redux for managing the global state of the cart.
+* State Persistence: The cart state is persisted across sessions using redux-persist.
+* Responsive Design: Styled using Tailwind CSS for fully responsive layouts.
+## Tech Stack
+* React: JavaScript library for building user interfaces.
+* Redux: For state management.
+* Tailwind CSS: For styling and ensuring responsiveness.
+* FakeStore API: The source of product data.
+## Endpoints:
+* GET /products: Fetch all products.
+* GET /products/:id:Fetch a specific product by ID.
+* GET /products/category/men's clothing: Fetch all products of men category
+* GET /products/category/women's clothing: Fetch all products of women category
+* GET /produts/category/jewelery: Fetch all products of jewelery category
+* GET /produts/category/electronics: Fetch all products of electronics category
+* GET /about: Renders about page 
 
-Currently, two official plugins are available:
+## Installation
+* Clone the repository: git clone https://github.com/Dimple278/Fashion_E-Commerce
+* Navigate to the project directory
+* Install dependencies: npm install
+* Start the development server: npm run dev
+* Open the app in your browser: http://localhost:3000
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
