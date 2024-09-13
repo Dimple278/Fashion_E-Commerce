@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../../atoms/Button";
+import Text from "../../atoms/Text";
 
 interface CategoryCardProps {
   imageSrc: string;
@@ -17,7 +18,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({
       className="category-card"
       style={{ backgroundImage: `url(${imageSrc})` }}
     >
-      <h2 className="category-card__title">{title}</h2>
+      <Text className="category-card__title">{title}</Text>
       <Button text={buttonText} />
     </section>
   );

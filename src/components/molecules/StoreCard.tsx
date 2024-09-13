@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "../atoms/Image";
+import Text from "../atoms/Text";
 
 interface StoreCardProps {
   city: string;
@@ -17,12 +18,15 @@ const StoreCard: React.FC<StoreCardProps> = ({ city, name, image }) => {
         className="object-contain w-full aspect-[1.51] max-md:max-w-full"
       />
       <div className="flex flex-col mt-2 w-full max-md:max-w-full">
-        <h2 className="text-xs tracking-wider leading-relaxed max-md:max-w-full">
+        <Text
+          type="h2"
+          className="text-xs font-normal tracking-wider leading-relaxed max-md:max-w-full"
+        >
           {city}
-        </h2>
-        <p className="mt-1 text-base tracking-wider max-md:max-w-full">
+        </Text>
+        <Text className="mt-1 text-base tracking-wider max-md:max-w-full">
           {name}
-        </p>
+        </Text>
       </div>
     </article>
   );

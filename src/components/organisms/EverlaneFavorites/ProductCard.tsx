@@ -1,5 +1,6 @@
 import React from "react";
 import { IProductCardProps } from "../../../interfaces/IProductCardProps";
+import Image from "../../atoms/Image";
 
 const ProductCard: React.FC<IProductCardProps> = ({
   imageSrc,
@@ -9,7 +10,7 @@ const ProductCard: React.FC<IProductCardProps> = ({
 }) => {
   return (
     <article>
-      <img
+      <Image
         loading="lazy"
         src={imageSrc}
         alt={`${title} in ${color}`}

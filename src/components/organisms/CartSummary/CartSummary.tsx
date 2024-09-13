@@ -4,6 +4,7 @@ import { RootState } from "../../../store/store";
 import { removeItem, updateQuantity } from "../../../store/slices/cartSlice";
 import { X } from "lucide-react";
 import CartItem from "./CartItem";
+import Button from "../../atoms/Button";
 
 interface CartSummaryProps {
   isOpen: boolean;
@@ -69,6 +70,14 @@ const CartSummary: React.FC<CartSummaryProps> = ({ isOpen, onClose }) => {
               <button className="w-full bg-black text-white py-3 px-4 text-lg font-medium hover:bg-gray-900 transition-colors">
                 CONTINUE TO CHECKOUT
               </button>
+              {/* <Button
+                onClick={onClose}
+                className="w-full py-3 px-4 text-lg font-medium hover:bg-gray-900 transition-colors m-0"
+                variant="secondary"
+              > 
+                Continue to checkout
+              </Button>
+              */}
               <p className="text-sm text-center text-gray-500 mt-2">
                 Psst, get it now before it sells out.
               </p>
