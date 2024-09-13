@@ -6,6 +6,7 @@ import EverlaneSection from "../components/organisms/EverlaneFavorites/EverlaneS
 import { HolidayGiftPicks } from "../components/organisms/HolidayGiftPicks/HolidayGiftPicks";
 import EverlaneOnYou from "../components/organisms/EverlaneOnYou/EverlaneOnYou";
 import InfoCardsContainer from "../components/organisms/InfoCards/InfoCardContainer";
+import Image from "../components/atoms/Image";
 
 const LandingPage = () => {
   return (
@@ -14,9 +15,11 @@ const LandingPage = () => {
       <ShopByCategory />
       <CategoryGrid />
       <MissionCleanup />
-      <EverlaneSection />s
+      <EverlaneSection />
+      <Image src="/peopleAreTalk.png" className="w-full mb-4" />
       <HolidayGiftPicks />
       <EverlaneOnYou />
+
       <InfoCardsContainer />
     </>
   );

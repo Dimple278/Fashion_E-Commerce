@@ -5,3 +5,27 @@
 .btn-primary {
   @apply bg-white text-neutral-800;
 }
+
+.btn-secondary {
+  @apply bg-neutral-800 text-white;
+}
+
+.btn-search {
+  @apply bg-stone-100 flex-1 shrink py-4 px-6 max-md:max-w-full;
+}
+
+.btn-cancel {
+  @apply bg-red-600 text-white py-4 px-6 hover:bg-red-700;
+}
+
+.btn-icon {
+  @apply p-2 rounded-full;
+}
+
+.btn-social {
+  @apply inline-block py-5 px-12 mt-8 w-60 max-w-full text-sm tracking-wide text-center bg-white rounded-lg max-md:px-5;
+}
+
+.btn-hamburger {
+  @apply focus:outline-none;
+}

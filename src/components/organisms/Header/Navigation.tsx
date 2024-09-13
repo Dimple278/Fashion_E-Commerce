@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Image from "../../atoms/Image";
 import IconGroup from "./IconGroup";
-import HamburgerIcon from "../../molecules/HamburgerIcon";
 import MobileMenu from "../../molecules/MobileMenu";
 import { navItems } from "../../../constants/navItems";
+import Button from "../../atoms/Button";
 
 const Navigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -67,7 +67,7 @@ const Navigation: React.FC = () => {
         <IconGroup />
 
         <div className="md:hidden ml-4">
-          <HamburgerIcon isOpen={isMenuOpen} toggleMenu={toggleMenu} />
+          <Button variant="hamburger" onClick={toggleMenu} />
         </div>
       </div>
 

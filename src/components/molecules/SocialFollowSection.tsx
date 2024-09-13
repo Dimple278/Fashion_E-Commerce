@@ -1,5 +1,5 @@
 import React from "react";
-import SocialButton from "../atoms/SocialButton";
+import Button from "../atoms/Button";
 
 interface SocialFollowSectionProps {
   title: string;
@@ -17,7 +17,8 @@ const SocialFollowSection: React.FC<SocialFollowSectionProps> = ({
       <h2 className="text-6xl leading-none text-white max-md:max-w-full max-md:text-4xl">
         {title}
       </h2>
-      <SocialButton text={buttonText} platform={socialPlatform} />
+      {/* <SocialButton text={buttonText} platform={socialPlatform} /> */}
+      <Button text={buttonText} variant="social" platform={socialPlatform} />
     </section>
   );
 };
