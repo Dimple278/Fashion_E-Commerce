@@ -24,6 +24,7 @@ This project is an eCommerce application where users can browse and add products
 * GET /produts/category/electronics: Fetch all products of electronics category
 * GET /about: Renders about page
 * GET /stores: Renders the stores page
+* * GET /blog: Renders the blog page
 
 ## Installation
 * Clone the repository: git clone https://github.com/Dimple278/Fashion_E-Commerce
