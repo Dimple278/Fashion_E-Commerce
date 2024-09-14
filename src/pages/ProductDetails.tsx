@@ -3,7 +3,6 @@ import { useGetProductByIdQuery } from "../store/slices/apiSlice";
 import Image from "../components/atoms/Image";
 import { useDispatch } from "react-redux";
 import { addItem } from "../store/slices/cartSlice";
-import Button from "../components/atoms/Button";
 
 const Shimmer = () => (
   <div className="animate-pulse flex space-x-4">

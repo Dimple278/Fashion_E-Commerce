@@ -1,4 +1,3 @@
-import React from "react";
 import BlogBannerContent from "../components/molecules/BlogBannerContent";
 import Divider from "../components/atoms/BlogDivider";
 import LatestArticles from "../components/organisms/LatestArticles";
